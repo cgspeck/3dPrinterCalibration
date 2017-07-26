@@ -6,10 +6,10 @@ Tower_Distance=30; // [20:60]
 Base_Thickness=2; // [1:5]
 
 /* [Advanced] */
-CUBE_SIZE=10; // [10:20]
 NOTCH_SIZE=1; // [1:3]
 
 /* [Hidden] */
+CUBE_SIZE=10;
 FONT_SIZE=4;
 FONT_X=CUBE_SIZE / 2;
 FONT_Z=NOTCH_SIZE + (CUBE_SIZE - NOTCH_SIZE) / 2;

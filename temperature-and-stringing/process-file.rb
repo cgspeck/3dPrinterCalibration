@@ -53,7 +53,7 @@ File.open(ARGV[0], mode="r") do |input_file|
                 puts "Level change detected #{line_match[1]} for #{hunt_val[0]}"
                 buffer.write("// inserted by process-file.rb for #{hunt_val}\n")
                 buffer.write("M104 S#{hunt_val[1]}#{extruder_num}\n")
-                buffer.write("M109\n")
+                buffer.write("M109 S#{hunt_val[1]}\n")
                 hunt_val = level_temperature.shift
             end
         end
