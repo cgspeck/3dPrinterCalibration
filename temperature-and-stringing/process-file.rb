@@ -34,8 +34,8 @@ puts "Start #{m_start}"
 puts "Step #{step}"
 puts "End #{m_end}"
 
-level_temperature = (1..steps + 1).inject({}) { |h,step|
-    h.merge(base_hieght + (step - 1) * cube_hieght => m_start - (step - 1) * 10)
+level_temperature = (1..steps + 1).inject({}) { |h,i|
+    h.merge(base_hieght + (i - 1) * cube_hieght => m_start - (i - 1) * step)
 }
 
 # generate a map of level <-> temperature
